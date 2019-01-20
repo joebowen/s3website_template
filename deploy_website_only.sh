@@ -1,6 +1,5 @@
 #!/bin/bash
 
-WEBSITE_NAME='test-site'
 STAGE='dev'
 PROFILE='default'
 DOMAIN_NAME='s3websitetestsite.com'
@@ -12,11 +11,6 @@ do
 key="$1"
 
 case $key in
-    --website-name)
-    WEBSITE_NAME="$2"
-    shift # past argument
-    shift # past value
-    ;;
     --stage)
     STAGE="$2"
     shift # past argument
